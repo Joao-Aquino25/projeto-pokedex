@@ -38,6 +38,7 @@ main {
 .pokemon-data {
   position: absolute;
   font-weight: 600;
+  font-size: clamp(8px, 5vw, 25px);
   color: #AAA;
   top: 54.5%;
   right: 27%;
@@ -46,4 +47,49 @@ main {
 .pokemon-name {
   color: #3A444D;
   text-transform: capitalize;
+}
+
+.form {
+  position: absolute;
+  width: 65%;
+  top: 65%;
+  left: 13.5%;
+}
+
+.input-search {
+  color: #1b1b1b;
+  font-weight: 600;
+  font-size: clamp(8px, 5vw, 1rem);
+  width: 100%;
+  padding: 4%;
+  outline: none;
+  border: 3px solid #2b2b2b;
+  background-color: #f8f8f8;
+  border-radius: 0;
+  image-rendering: pixelated;
+  box-shadow:
+    inset -2px -2px 0 #ffffff,
+    inset 2px 2px 0 #c4c4c4,
+    0 0 0 3px #2b2b2b;
+  transition: all 0.15s steps(2);
+}
+
+.input-search:hover {
+  background-color: #ffcb05;
+  border-color: #de9e00;
+  box-shadow:
+    inset -2px -2px 0 #ffe680,
+    inset 2px 2px 0 #c28a00,
+    0 0 0 3px #2b2b2b,
+    4px 4px 0 #2b2b2b;
+  transform: translate(-2px, -2px);
+}
+
+.input-search:active {
+  background-color: #e6b800;
+  box-shadow:
+    inset 2px 2px 0 #b38f00,
+    inset -2px -2px 0 #ffdf80,
+    0 0 0 3px #2b2b2b;
+  transform: translate(0, 0);
 }
